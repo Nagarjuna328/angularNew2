@@ -1,0 +1,13 @@
+<h1>parent</h1>
+<div>
+  <p>value:<strong>{{hello}}</strong></p>
+  <p>value from child:<strong>{{gudbye}}</strong></p>
+</div>
+
+
+
+
+<div id="container">
+  <app-child [state]="hello" (event)="sendDataFromChild($event)"></app-child>
+
+</div>
